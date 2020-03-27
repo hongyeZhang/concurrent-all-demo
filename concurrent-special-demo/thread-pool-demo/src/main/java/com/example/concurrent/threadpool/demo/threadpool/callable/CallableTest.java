@@ -8,12 +8,15 @@ import java.util.concurrent.*;
  * @Description: ForkJoin线程池使用  有返回值
  */
 public class CallableTest {
+
     public static void main(String[] args) throws InterruptedException {
+
         ExecutorService executor = null;
         int count = 10;
         try {
             // !!! 不推荐使用Executors的静态方法创建线程池 !!!
             executor = Executors.newCachedThreadPool();
+
             CompletionService<String> completionService = new ExecutorCompletionService<>(executor);
             for (int i = 0; i < count; i++) {
                 FactorialCalculator factorialCalculator = new FactorialCalculator(i);
