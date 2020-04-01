@@ -10,10 +10,8 @@ import com.example.thread.group.demo.onelevel.TestThread;
 public class LevelsDemo {
     public static void main(String[] args) {
         ThreadGroup threadGroup1 = new ThreadGroup("线程组1");
-        ThreadGroup threadGroup2
-                = new ThreadGroup(threadGroup1, "线程组2");
-        ThreadGroup threadGroup3
-                = new ThreadGroup(threadGroup1, "线程组3");
+        ThreadGroup threadGroup2 = new ThreadGroup(threadGroup1, "线程组2");
+        ThreadGroup threadGroup3 = new ThreadGroup(threadGroup1, "线程组3");
         TestThread testThread1 = new TestThread();
         TestThread testThread2 = new TestThread();
         TestThread testThread3 = new TestThread();

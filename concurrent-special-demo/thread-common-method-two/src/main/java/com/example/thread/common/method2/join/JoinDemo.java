@@ -6,8 +6,7 @@ package com.example.thread.common.method2.join;
  * @Description:
  */
 public class JoinDemo {
-    public static void main(String[] args) throws InterruptedException
-    {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread2
                 = new Thread(() -> {
             System.out.println("thread2 started");
